@@ -61,7 +61,7 @@ const ServicesSection = () => {
             전문 진료 분야
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            다양한 구강 질환에 대한 체계적이고 전문적인 치료 서비스를 제공합니다
+            다양한 구강 질환에 대해 체계적이고 전문적인 치료를 제공합니다
           </p>
         </div>
 

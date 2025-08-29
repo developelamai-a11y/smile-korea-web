@@ -21,7 +21,7 @@ const HeroSection = () => {
             믿을 수 있는 전문 치과 진료
           </h1>
           <p className="text-xl md:text-3xl mb-12 opacity-95 drop-shadow-md font-medium">
-            최신 장비와 숙련된 의료진으로 환자분의 건강한 미소를 책임집니다
+            최신 장비와 숙련된 의료진으로 환자분의 건강한 미소를 지켜드립니다
           </p>
           
           <div className="flex flex-col sm:flex-row gap-6 justify-center mb-16">
@@ -29,7 +29,7 @@ const HeroSection = () => {
               온라인 예약하기
             </Button>
             <Button size="lg" variant="outline" className="border-2 border-white text-white hover:bg-white hover:text-primary text-xl px-10 py-4 h-auto font-semibold bg-white/10 backdrop-blur-sm">
-              진료안내 보기
+              진료 안내 보기
             </Button>
           </div>
 
