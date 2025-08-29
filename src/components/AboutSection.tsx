@@ -15,7 +15,7 @@ const AboutSection = () => {
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
               스마일코리아 치과는 2010년 개원 이래 최신 의료 기술과 따뜻한 마음으로 
-              환자분들의 구강 건강을 책임져왔습니다.
+              환자분들의 구강 건강을 지켜왔습니다
             </p>
           </div>
 
@@ -55,7 +55,7 @@ const AboutSection = () => {
 
             <div className="space-y-6">
               <h3 className="text-2xl font-bold text-foreground">
-                왜 스마일코리아 치과를 선택해야 할까요?
+                스마일코리아 치과가 특별한 이유?
               </h3>
               <div className="space-y-4">
                 <div className="flex items-start gap-3">
@@ -69,14 +69,14 @@ const AboutSection = () => {
                   <div className="w-2 h-2 bg-secondary rounded-full mt-3 flex-shrink-0"></div>
                   <div>
                     <h4 className="font-semibold text-foreground mb-1">숙련된 전문의</h4>
-                    <p className="text-muted-foreground">풍부한 임상 경험과 지속적인 연구로 검증된 실력</p>
+                    <p className="text-muted-foreground">풍부한 임상 경험과 꾸준한 연구로 검증된 실력</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
                   <div className="w-2 h-2 bg-primary rounded-full mt-3 flex-shrink-0"></div>
                   <div>
                     <h4 className="font-semibold text-foreground mb-1">개인 맞춤 치료</h4>
-                    <p className="text-muted-foreground">환자 개인의 상태와 요구에 맞는 최적의 치료 계획 수립</p>
+                    <p className="text-muted-foreground">환자 한 분 한 분의 상태와 요구에 맞춘 최적의 치료 계획</p>
                   </div>
                 </div>
               </div>
