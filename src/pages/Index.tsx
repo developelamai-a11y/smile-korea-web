@@ -6,6 +6,8 @@ import StaffSection from "@/components/StaffSection";
 import TestimonialsSection from "@/components/TestimonialsSection";
 import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
+import Chatbot from "@/components/Chatbot";
+import LanguageSelector from "@/components/LanguageSelector";
 
 const Index = () => {
   return (
@@ -20,6 +22,8 @@ const Index = () => {
         <ContactSection />
       </main>
       <Footer />
+      <Chatbot />
+      <LanguageSelector />
     </div>
   );
 };

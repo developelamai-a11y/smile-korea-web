@@ -1,9 +1,33 @@
+import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Phone, MapPin, Clock } from "lucide-react";
 
 const Header = () => {
+  const [isScrolled, setIsScrolled] = useState(false);
+  const [isVisible, setIsVisible] = useState(true);
+
+  useEffect(() => {
+    let lastScrollY = window.scrollY;
+    
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY;
+      const scrollingUp = currentScrollY < lastScrollY;
+      
+      setIsScrolled(currentScrollY > 50);
+      setIsVisible(scrollingUp || currentScrollY < 100);
+      lastScrollY = currentScrollY;
+    };
+
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
   return (
-    <header className="bg-background border-b border-border shadow-soft">
+    <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+      isVisible ? 'translate-y-0' : '-translate-y-full'
+    } ${
+      isScrolled ? 'bg-background/95 backdrop-blur-sm shadow-medium' : 'bg-background'
+    } border-b border-border`}>
       {/* Top bar with contact info */}
       <div className="bg-primary text-primary-foreground py-2">
         <div className="container mx-auto px-4">
@@ -41,7 +65,7 @@ const Header = () => {
             <a href="#contact" className="text-foreground hover:text-primary transition-colors">오시는길</a>
           </nav>
 
-          <Button variant="default" className="bg-gradient-primary hover:opacity-90">
+          <Button variant="default" className="bg-gradient-primary hover:opacity-90 font-semibold">
             온라인 예약
           </Button>
         </div>
